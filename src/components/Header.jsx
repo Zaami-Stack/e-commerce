@@ -4,8 +4,8 @@ import userDefaultPicture from "../assets/icons/user-icon.jpg";
 function Header() {
   return (
     <header
-      className="flex px-10 h-12 items-center
-         bg-zinc-200 mt-3 rounded-4xl border
+      className="flex fixed left-5 right-5 px-10 h-12 items-center
+         bg-zinc-200/70 backdrop-blur-xl  mt-3 rounded-4xl border
           border-[#d8d8d8]"
     >
       <div className="left flex items-center flex-1">
