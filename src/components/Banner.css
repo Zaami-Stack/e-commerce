@@ -1,0 +1,27 @@
+.banner {
+  width: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  animation: banner-zoom 1.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (min-width: 768px) {
+  .banner-img {
+    height: clamp(340px, 62vh, 680px);
+    object-position: center top;
+  }
+}
+
+@keyframes banner-zoom {
+  from {
+    transform: scale(1.06);
+  }
+  to {
+    transform: scale(1);
+  }
+}
